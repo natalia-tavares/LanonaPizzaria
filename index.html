@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" hre f="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/responsivo.css">
+
+        <script src="https://kit.fontawesome.com/3adda180c0.js" crossorigin="anonymous"></script>
+
+        <title>Pizzaria La Nona</title>
+    </head>
+    <body class = "flex">
+        <div class="models">
+            <div class="pizzaItem flex">
+                <a class = "flex">
+                    <div class="pizzaImg">
+                        <img src="" alt="">
+                    </div>
+                    <h1 class = "flex">+</h1>
+                </a>
+
+                <h3 class="pizzaPrice"></h3>
+                <h1 class = "pizzaName"></h3></h1>
+                <h3 class="pizzaDescription"></h3>
+            </div>
+            
+            <div class="cartItem flex">
+                <img src="" alt="">
+                <div class="pizzaInfo flex">
+                    <h1 class = "cartPizzaName"></h1> 
+                    <h3 class = "pizzaSize"> </h3>
+                </div>
+               
+
+                <div class="cartQuantityArea flex">
+                    <button class="removeQuantity">-</button>
+                    <h3 class="showQuantity"></h3>
+                    <button class="addQuantity">+</button>
+                </div>
+            </div>
+        </div>
+
+        <main class = "flex">
+            <div class="header flex">
+                <i id = "darkModeBtn" class="far fa-moon"></i>
+                <h1 class = "tittle">Cardapio La Nona</h1>
+                <i class="cartIcon fas fa-shopping-cart">
+                    <span>1</span>
+                </i>
+                
+            </div>
+            
+            <div class="content grid">
+
+            </div>
+             <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>REDES SOCIAIS</h3>
+          <a href="https://github.com/natalia-tavares"  target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/natalia-tavares-/" target="_blank">Linkedin</a>
+      
+        </div>
+        <div class="footer-center">
+          <h3>Projeto</h3>
+          <a href="#">Pizzaria La Nona</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+            <aside id = "leftMenuArea" class="leftMenu">
+                <div class="leftMenuContent flex">
+                    <div class="cartContent">
+
+                    </div>
+                </div>
+            </aside>
+        </main>
+        
+
+        <div class="pizzaInfoModal flex">
+            <div class="modalContent grid">
+                <h1 class = "mobileCloseModal">Voltar</h1>
+                <img src="" alt="">
+
+                <div class="modalInfo flex">
+                    <div class="text">
+                        <h1 class="pizzaName"></h1>
+                        <h3 class="pizzaDescription"></h3>
+                    </div>
+
+                    <div class="pizzaSizeArea flex">
+                        <h2>Tamanhos</h2>
+                        <div class="pizzaChooseSize flex">
+                            <button data-key = "0" class="pizzaSize flex"><h3>Pequena</h3><span>--</span></button>
+                            <button data-key = "1" class="pizzaSize flex"><h3>Média</h3><span>--</span></button>
+                            <button data-key = "2" class="pizzaSize flex selected"><h3>Grande</h3><span>--</span></button>
+                        </div>
+                    </div>
+
+                    <div class="priceArea flex">
+                        <h2>Preço</h2>
+
+                        <div class="priceInfo flex">
+                            <h1 class="price"></h1>
+                            <div class="qntBtn flex">
+                                <button class="lessQnt">-</button>
+                                <h3>1</h3>
+                                <button class="moreQnt">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exitBtn flex">
+                        <button class="addProduct">Adicionar ao carrinho</button>
+                        <button class="closeProduct">Cancelar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cartHeader flex">
+                <h3>Seu carrinho</h3>
+            </div>
+            <div class="buttonfechar">  
+                <button class="fechar">X</button>  
+            </div>
+            <div class="container flex">
+                <h1>Infelizmente você ainda não comprou nada conosco</h1>
+            </div>
+
+            <div class="finalData flex">
+                <div class="text">
+                    <h2 class = "subTotal" >Subtotal:</h2>
+                    <h2 class = "discount" >Desconto: </h2>
+                    <h2 class = "totalText" >Total:</h2>
+                </div>
+                <div class="buttonArea flex">  
+                    <button  type="button" class="botaofinal">Finalizar compra</button>  
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div id="modal-dados" class="modal-container-dados">
+            <div class="dadosCliente">
+                <h3 class="text"> Preencha todos os dados corretamente para receber seu pedido</h3>
+                <form action="#">
+                    <p><label for="nome" class="completo"> Nome: </label>
+                    <input class="nome" type="text" placeholder="Nome Completo"> </p>
+                    <p><label for="email" class="email1"> Email: </label>
+                    <input class="email" type="email" placeholder="Email"></p>
+                    <p><label for="phone" class="telefone"> Telefone: </label>
+                    <input class="phone" type="number" placeholder="(DDD) 90000-0000"></p>
+                    <p><label for="estado" class="cidade"> Estado e Cidade:</label>
+                    <input class="estado" type="text" placeholder="Sigla e nome da cidade"></p>
+                    <p><label for="cep" class="cep">CEP:</label>
+                    <input class="cep" type="number" placeholder="CEP COMPLETO"></p>
+                    <p><label for="endereco" class="nomerua">Endereço:</label>
+                    <input class="endereco" type="text" placeholder="Nome da rua e número">
+                    </p>
+                    <p> <label for="Pag" class="pagamento"> Forma de Pagamento:</label> </p> <p>
+                    <input class="pag" type="radio"> Dinheiro
+                    <input class="pag" type="radio"> Cartão de Débito
+                    <input class="pag" type="radio"> Cartão de Crédito</p>
+
+                  <button onclick='finalizarcomprar()' type="button" class="botaoEnviar">Enviar</button>
+                  
+                     <div id='msgError'> </div>
+                     <div id='msgSuccess'></div>   
+                  </form>
+            </div>
+        </div>
+
+        
+        <script src="/js/pizzas.js"></script>
+        <script src="/js/script.js"></script>
+
+       
+    </body>
+</html>
