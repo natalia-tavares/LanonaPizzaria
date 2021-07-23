@@ -136,7 +136,7 @@
                 <h3>Seu carrinho</h3>
             </div>
             <div class="buttonfechar">  
-                <button class="fechar">X</button>  
+                <button onclick="closeCartModal()" class="fechar">X</button>  
             </div>
             <div class="container flex">
                 <h1>Infelizmente você ainda não comprou nada conosco</h1>
@@ -161,22 +161,21 @@
                 <h3 class="text"> Preencha todos os dados corretamente para receber seu pedido</h3>
                 <form action="#">
                     <p><label for="nome" class="completo"> Nome: </label>
-                    <input class="nome" type="text" placeholder="Nome Completo"> </p>
+                    <input  required class="nome" type="text" placeholder="Nome Completo"> </p>
                     <p><label for="email" class="email1"> Email: </label>
-                    <input class="email" type="email" placeholder="Email"></p>
+                    <input  required class="email" type="email" placeholder="Email"></p>
                     <p><label for="phone" class="telefone"> Telefone: </label>
-                    <input class="phone" type="number" placeholder="(DDD) 90000-0000"></p>
+                    <input  required class="phone" type="number" placeholder="(DDD) 90000-0000"></p>
                     <p><label for="estado" class="cidade"> Estado e Cidade:</label>
-                    <input class="estado" type="text" placeholder="Sigla e nome da cidade"></p>
+                    <input  required class="estado" type="text" placeholder="Sigla e nome da cidade"></p>
                     <p><label for="cep" class="cep">CEP:</label>
-                    <input class="cep" type="number" placeholder="CEP COMPLETO"></p>
+                    <input  required class="cep" type="number" placeholder="CEP COMPLETO"></p>
                     <p><label for="endereco" class="nomerua">Endereço:</label>
-                    <input class="endereco" type="text" placeholder="Nome da rua e número">
+                    <input  required class="endereco" type="text" placeholder="Nome da rua e número">
                     </p>
-                    <p> <label for="Pag" class="pagamento"> Forma de Pagamento:</label> </p> <p>
-                    <input class="pag" type="radio"> Dinheiro
-                    <input class="pag" type="radio"> Cartão de Débito
-                    <input class="pag" type="radio"> Cartão de Crédito</p>
+                        <p> <label for="Pag" class="pagamento"> Forma de Pagamento:</label> </p> <p><input required class="pag" type="radio" name="value"> Dinheiro
+                        <input class="pag" type="radio" name="value"> Cartão de Débito
+                        <input class="pag" type="radio" name="value"> Cartão de Crédito</p>
 
                   <button onclick='finalizarcomprar()' type="button" class="botaoEnviar">Enviar</button>
                   

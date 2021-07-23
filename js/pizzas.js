@@ -3,7 +3,7 @@ let pizzaJson = [
     id: 1,
     name: "Moda da Casa",
     img: "images/pizza.png",
-    price: 20.19,
+    price: 50.50,
     sizes: ["100g", "530g", "860g"],
     description:
       "Calabresa, Ervilha, Frango Desfiado, Milho, Mussarela, Orégano e Ovo",
@@ -22,7 +22,7 @@ let pizzaJson = [
     id: 3,
     name: "Pepperoni",
     img: "images/pizza3.png",
-    price: 17.45,
+    price: 37.45,
     sizes: ["320g", "530g", "860g"],
     description:
       "Pepperoni e mussarela",
@@ -31,7 +31,7 @@ let pizzaJson = [
     id: 4,
     name: "Portuguesa",
     img: "images/pizza4.png",
-    price: 19.77,
+    price: 29.77,
     sizes: ["320g", "530g", "860g"],
     description:
       "Presunto, ervilha, milho, ovo, mussarela e cebola",
@@ -40,7 +40,7 @@ let pizzaJson = [
     id: 5,
     name: "Atum",
     img: "images/pizza5.png",
-    price: 21.43,
+    price: 31.43,
     sizes: ["320g", "530g", "860g"],
     description:
       "Atum ralado e cebola",
@@ -49,7 +49,7 @@ let pizzaJson = [
     id: 6,
     name: "Frango com Catupiry ",
     img: "images/pizza6.png",
-    price: 18.55,
+    price: 28.55,
     sizes: ["320g", "530g", "860g"],
     description:
       "Frango, Bacon e Catupiry",
@@ -58,7 +58,7 @@ let pizzaJson = [
     id: 7,
     name: "4 queijos",
     img: "images/pizza7.png",
-    price: 22.36,
+    price: 32.50,
     sizes: ["320g", "530g", "860g"],
     description:
       "Mussarela, Catupiry, provolone e parmesão",
@@ -67,7 +67,7 @@ let pizzaJson = [
     id: 8,
     name: "Alho",
     img: "images/pizza8.png",
-    price: 22.36,
+    price: 30.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Mussarela e alho frito",
@@ -76,7 +76,7 @@ let pizzaJson = [
     id: 9,
     name: "Mussarela",
     img: "images/pizza9.png",
-    price: 22.36,
+    price: 22.90,
     sizes: ["320g", "530g", "860g"],
     description:
       "Mussarela, rodelas de tomates e orégano",
@@ -85,7 +85,7 @@ let pizzaJson = [
     id: 10,
     name: "Milho",
     img: "images/pizza10.png",
-    price: 22.36,
+    price: 32.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Milho com Catupiry",
@@ -94,7 +94,7 @@ let pizzaJson = [
     id: 11,
     name: "Tomate Seco",
     img: "images/pizza11.png",
-    price: 22.36,
+    price: 45.50,
     sizes: ["320g", "530g", "860g"],
     description:
       "Mussarela e tomate seco ",
@@ -103,7 +103,7 @@ let pizzaJson = [
     id: 12,
     name: "Margarita",
     img: "images/pizza12.png",
-    price: 22.36,
+    price: 35.80,
     sizes: ["320g", "530g", "860g"],
     description:
       "Mussarela, manjericão, tomate e parmesão",
@@ -112,7 +112,7 @@ let pizzaJson = [
     id: 13,
     name: "Banana",
     img: "images/pizza13.png",
-    price: 22.36,
+    price: 30.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Banana com chocolate ao leite",
@@ -121,7 +121,7 @@ let pizzaJson = [
     id: 14,
     name: "Sensação",
     img: "images/pizza14.png",
-    price: 22.36,
+    price: 30.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Morangos com chocolate ao leite ",
@@ -130,7 +130,7 @@ let pizzaJson = [
     id: 15,
     name: "Chocolate Colorido",
     img: "images/pizza15.png",
-    price: 22.36,
+    price: 35.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Chocolate ao leite com M&M's",
@@ -139,7 +139,7 @@ let pizzaJson = [
     id: 16,
     name: "Chocolate",
     img: "images/pizza16.png",
-    price: 22.36,
+    price: 30.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Chocolate ao leite com granulado",
@@ -148,7 +148,7 @@ let pizzaJson = [
     id: 17,
     name: "Meio a Meio",
     img: "images/pizza17.png",
-    price: 22.36,
+    price: 33.00,
     sizes: ["320g", "530g", "860g"],
     description:
       "Chocolate ao leite e chocolate branco",
@@ -157,7 +157,7 @@ let pizzaJson = [
     id: 18,
     name: "Romeu e Julieta",
     img: "images/pizza18.png",
-    price: 22.36,
+    price: 32.50,
     sizes: ["320g", "530g", "860g"],
     description:
       "Goiabada e Mussarela",

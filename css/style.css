@@ -19,6 +19,10 @@ main .tittle {
   text-transform: uppercase;
   letter-spacing: 10px;
 }
+h1.tittle {
+  color: orangered;
+  font-size: 35px;  
+}
 
 main .header i {
   font-size: 28px;
