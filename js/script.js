@@ -300,29 +300,48 @@ var nome = document.querySelector('.nome')
 var email = document.querySelector('.email')
 var telefone = document.querySelector('.phone')
 var estado = document.querySelector('.estado')
-var cep = document.querySelector('.cep')
 var endereco = document.querySelector('.endereco')
 var pagamento = document.querySelector('.pag')
 var msgError = document.querySelector('#msgError')
 var msgSuccess = document.querySelector('#msgSuccess')
+var pizzanome = document.querySelector('.pizzaName')
+var quantidade = document.querySelector('.qntBtn h3')
+
+
+function finalizarprodutos(){
+  if (pizzanome.value != '' && quantidade.value != '' ) {
+    let produtos = JSON.parse(
+      localStorage.getItem('pizzaName') ||      localStorage.getItem('qntBtn h3')
+    )
+    produtos.push({
+      Pizza: pizzanome.value,
+      Quantidade: quantidade.value
+    })
+
+    localStorage.setItem('produtos', JSON.stringify(produtos))
+  }
+}
+
+
+
+
 
 function finalizarcomprar() {
-  if (nome.value != '' && email.value != '' && telefone.value != '' && estado.value != '' && cep.value !='' && endereco.value !='' && pagamento.value !='' ) {
-    let validaFormulario = JSON.parse(
-      localStorage.getItem('validaFormulario') || '[]'
+  if (nome.value != '' && email.value != '' && telefone.value != '' && estado.value != '' &&  endereco.value !='' && pagamento.value !='' ) {
+    let clientes = JSON.parse(
+      localStorage.getItem('clientes') || '[]'
     )
 
-    validaFormulario.push({
-      nome: nome.value,
-      email: email.value,
-      telefone: telefone.value,
-      estado: estado.value,
-      cep: cep.value,
+    clientes.push({
+      Nome: nome.value,
+      Email: email.value,
+      Telefone: telefone.value,
+      Estado: estado.value,
       Endereço: endereco.value,
       Pagamento: pagamento.value
     })
 
-    localStorage.setItem('validaFormulario', JSON.stringify(validaFormulario))
+    localStorage.setItem('clientes', JSON.stringify(clientes))
 
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML =
