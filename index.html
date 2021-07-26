@@ -149,7 +149,7 @@
                     <h2 class = "totalText" >Total:</h2>
                 </div>
                 <div class="buttonArea flex">  
-                    <button  type="button" class="botaofinal">Finalizar compra</button>  
+                    <button  onclick="finalizarprodutos()"  type="button" class="botaofinal">Finalizar compra</button>  
                 </div>
                 
             </div>
@@ -168,14 +168,12 @@
                     <input  required class="phone" type="number" placeholder="(DDD) 90000-0000"></p>
                     <p><label for="estado" class="cidade"> Estado e Cidade:</label>
                     <input  required class="estado" type="text" placeholder="Sigla e nome da cidade"></p>
-                    <p><label for="cep" class="cep">CEP:</label>
-                    <input  required class="cep" type="number" placeholder="CEP COMPLETO"></p>
                     <p><label for="endereco" class="nomerua">Endereço:</label>
                     <input  required class="endereco" type="text" placeholder="Nome da rua e número">
                     </p>
-                        <p> <label for="Pag" class="pagamento"> Forma de Pagamento:</label> </p> <p><input required class="pag" type="radio" name="value"> Dinheiro
-                        <input class="pag" type="radio" name="value"> Cartão de Débito
-                        <input class="pag" type="radio" name="value"> Cartão de Crédito</p>
+                        <p> <label for="Pag" class="pagamento"> Forma de Pagamento:</label> </p> <p><input required class="pag" type="radio" name="value" value="Dinheiro"> Dinheiro
+                        <input class="pag" type="radio" name="value" value="Cartão de Débito"> Cartão de Débito
+                        <input class="pag" type="radio" name="value" value="Cartão de Crédito"> Cartão de Crédito</p>
 
                   <button onclick='finalizarcomprar()' type="button" class="botaoEnviar">Enviar</button>
                   
