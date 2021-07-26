@@ -660,8 +660,7 @@ main .content {
 
 
 
-.completo, .email1, .telefone, .cidade,
-.cep, .nomerua{
+.completo, .email1, .telefone, .cidade, .nomerua{
   margin: 30px;
   font-family: var(--domine);
   padding-top: 80px;
